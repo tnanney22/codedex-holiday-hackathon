@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="root/resources/images/d&b_logo.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Welcome to Dave & Buster's</title>
+    <link rel="stylesheet" href="/resources/css/style.css" />
+    <style>
+      body {
+        background: black
+          url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+        color: #39ff14;
+        font-family: "Press Start 2P", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        text-shadow:
+          0 0 10px #39ff14,
+          0 0 20px #ff00ff;
+      }
+
+      button {
+        background: #ff00ff;
+        color: black;
+        font-size: 1.5rem;
+        border: none;
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow:
+          0 0 10px orange,
+          0 0 20px orange;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        box-shadow:
+          0 0 20px orange,
+          0 0 30px orange;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="root/resources/images/d&b_logo.png"
+      alt="Dave & Buster's Logo"
+      style="display: block; margin: 0 auto; max-width: 300px"
+    />
+    <h1 style="color: blue">Welcome to Dave & Buster's</h1>
+    <button onclick="location.href='home.html'" style="color: orange">
+      Press Start
+    </button>
+    <footer
+      style="
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+      "
+    >
+      &copy; 1999 Dave & Buster's. All Rights Reserved
+    </footer>
+  </body>
+</html>

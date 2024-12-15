@@ -1,0 +1,63 @@
+/* Retro Style CSS for Dave & Buster's 90's*/
+
+body {
+  background: black
+    url("https://www.transparenttextures.com/patterns/black-linen.png");
+  color: #39ff14; /* Neon green */
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ff00ff; /* Neon pink */
+  text-shadow:
+    0 0 5px #ff00ff,
+    0 0 10px #ff00ff;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0; /* Remove additional padding if necessary */
+}
+
+nav {
+  background: linear-gradient(to right, #ff0000, #ff9900, #ff00ff);
+  padding: 10px;
+  box-shadow: 0 0 10px #ff9900;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff00ff;
+}
+
+button {
+  background: #000;
+  color: #39ff14;
+  border: 2px solid #39ff14;
+  font-family: "Press Start 2P", sans-serif;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #39ff14;
+  color: black;
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.8rem;
+  text-shadow: 0 0 5px #fff;
+}

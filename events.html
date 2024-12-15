@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="root/resources/images/d&b_logo.png">
+    <title>Dave & Buster's - Events</title>
+    <link rel="stylesheet" href="root/resources/css/style.css">
+    <script>
+        function showBookingForm() {
+            const formSection = document.getElementById('booking-form-section');
+            formSection.style.display = 'block';
+            formSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const formSection = document.getElementById('booking-form-section');
+            formSection.style.display = 'none';
+        });
+    </script>
+    <style>
+         body {
+            cursor: url('root/resources/cursors/galaga_cursor.cur'), auto;
+        }
+    </style>
+</head>
+<body> 
+    <header style="display: flex; flex-direction: column; align-items: center; padding: 10px 20px;">
+        <div style="display: flex; align-items: center; width: 100%; max-width: 1200px;">
+            <img src="root/resources/images/d&b_logo.png" alt="Dave & Buster's Logo" style="max-width: 100px; flex-shrink: 0;">
+            <h1 style="margin: 0 auto; text-align: center; font-size: 2rem; line-height: 1.2;">Welcome to Dave & Buster's</h1>
+        </div>
+        <nav style="text-align: center; margin-top: 10px; width: 100%; max-width: 1200px;">
+            <a href="home.html" style="margin: 0 15px;">Home</a>
+            <a href="games.html" style="margin: 0 15px;">Games</a>
+            <a href="food.html" style="margin: 0 15px;">Food</a>
+            <a href="events.html" style="margin: 0 15px;">Events</a>
+        </nav>
+    </nav>
+    <section>
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><strong>80's Trivia Night:</strong> Test your knowledge of the 80's! Join us every Thursday at 7 PM.</li>
+            <li><strong>Arcade Tournaments:</strong> Compete for prizes in classic arcade games. First Saturday of every month.</li>
+            <li><strong>Karaoke Fridays:</strong> Sing your favorite 90's hits every Friday from 8 PM to midnight.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Private Events</h2>
+        <p>Looking to book a private event? We offer customizable party packages for birthdays, corporate events, and more! Contact us for details.</p>
+        <button onclick="showBookingForm()">Book Now</button>
+    </section>
+    <section id="booking-form-section">
+        <h2>Book Your Event</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event-type">
+                <option value="birthday">Birthday Party</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer style="position: absolute; bottom: 10px; width: 100%; text-align: center; color: #FFFFFF; font-family: 'Press Start 2P', sans-serif;">
+        &copy; 1999 Dave & Buster's. All Rights Reserved
+    </footer>
+</body>
+</html>
